@@ -82,6 +82,10 @@ angular.module('mgo-angular-wizard').directive('wizard', function() {
                 }
             };
 
+            this.getSteps = function() {
+                return $scope.steps;
+            };
+
             this.goTo = function(step) {
                 var stepTo;
                 if (_.isNumber(step)) {
